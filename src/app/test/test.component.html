@@ -1,0 +1,31 @@
+<p>{{name}} </p>
+<div>
+    <p [class.text-success]="validUser">{{greetUser()}}</p>
+    <div *ngIf="isclicked; then thenBlock; else elseBlock"></div>
+    <ng-template #thenBlock>
+        <p>You got the results for your search data as above</p>
+    </ng-template>
+    <ng-template #elseBlock>
+        <p>Please enter the data for input field</p>
+    </ng-template>
+    <button (click)="onfire()">Send Event</button>
+</div>
+<div *ngFor="let emp of hikeDetails">
+    <p>Name : {{emp.name}} ,  ID : {{emp.id}} ,  Package : {{emp.package}}</p>
+</div>
+<div>
+    <input #input type="text">
+    <button (click)="onClick(input.value)">getEmpId</button>
+    <p>{{data}}</p>
+    <audio controls preload="auto" id="surveyrecord">
+        <source type="audio/mpeg" src="../assets/data/meri-tarah-jubin-nautiyal-128-kbps-sound.mp3">
+    </audio>
+</div>
+<div>
+    <!-- <audio controls preload="auto" id="surveyrecord">
+        <source type="audio/mpeg" src="../assets/data/meri-tarah-jubin-nautiyal-128-kbps-sound.mp3">
+    </audio> -->
+</div>
+
+
+ 

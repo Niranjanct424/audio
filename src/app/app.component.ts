@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-tour-of-heroes';
+  recordingId:any;
+  // binding="";
+  // public message="";
+  // login(id:any){
+  //   console.log('Hello user'+id);
+  // }
+  // binding="";
+  // public message="";
+  // login(id:any){
+  //   console.log('Hello user'+id);
+  // }
+  // toggle!: false;
+
+  
 }
